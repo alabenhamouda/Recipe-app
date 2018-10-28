@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import './RecipeApp.css';
 import RecipeList from './RecipeList';
+import Navbar from './Navbar';
 
 export default class RecipeApp extends Component {
     render() {
         return (
             <div>
+                <header><Navbar /></header>
                 <RecipeList
                 recipes={[
                     {
